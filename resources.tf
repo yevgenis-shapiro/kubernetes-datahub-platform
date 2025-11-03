@@ -24,25 +24,27 @@ module "nginx" {
   depends_on = [module.metallb]
 }
 
-module "argo" {
-  source = "./modules/argo"
-  depends_on = [module.nginx]
-}
-
 module "argo-events" {
   source = "./modules/argo-events"
-  depends_on = [module.argo]
+  depends_on = [module.nginx]
 }
 
 module "minio" {
   source = "./modules/minio"
-  depends_on = [module.argo]
+  depends_on = [module.argo-events]
 }
 
 module "velero" {
   source = "./modules/velero"
-  depends_on = [module.minio]
+  depends_on = [module.argo-events]
 }
+
+module "datahub" {
+  source = "./modules/datahub"
+  depends_on = [module.velero]
+}
+
+
 
 
 
