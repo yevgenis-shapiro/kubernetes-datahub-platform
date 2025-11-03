@@ -3,7 +3,7 @@
 
 
 
-## Kubernetes | DataHub
+## Kubernetes | DataHub Platform
 DataHub is an open source data catalog that enables end-to-end data discovery, data observability, and data governance. This extensive metadata platform allows users to collect, store, and explore metadata from various sources, such as databases, data lakes, streaming platforms, and ML feature stores. DataHub provides many features, a rich UI for searching and browsing metadata, as well as an API for integrating with other applications.
 
 
@@ -20,12 +20,14 @@ DataHub is an open source data catalog that enables end-to-end data discovery, d
 
 
 🏗️ Architecture Overview
+```
 DataHub is built on a modular architecture:
 Metadata Service (GMS) – Central GraphQL-based metadata store (backed by MySQL/Elasticsearch).
 Ingestion Framework – Python-based system that pulls metadata from sources.
 Frontend – React UI for search, lineage visualization, and dataset exploration.
 Kafka / MCEs – Uses Kafka topics for event-based metadata updates.
 Graph Model – Metadata is modeled as a graph (datasets, pipelines, owners are all nodes/edges).
+```
 
 
 🚀 Deployment Options
