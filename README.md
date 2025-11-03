@@ -5,6 +5,14 @@
 DataHub is an open source data catalog that enables end-to-end data discovery, data observability, and data governance. This extensive metadata platform allows users to collect, store, and explore metadata from various sources, such as databases, data lakes, streaming platforms, and ML feature stores. DataHub provides many features, a rich UI for searching and browsing metadata, as well as an API for integrating with other applications.
 
 
+#### 🧱 Architecture Components :
+   - **Metadata Service (GMS)**: Central GraphQL-based metadata store (backed by MySQL/Elasticsearch).
+   - **Ingestion Framework**: Python-based system that pulls metadata from sources.
+   - **Frontend**: React UI for search, lineage visualization, and dataset exploration.
+   - **Kafka**: Uses Kafka topics for event-based metadata updates.
+   - **Graph Model**: Metadata is modeled as a graph (datasets, pipelines, owners are all nodes/edges).
+
+
 ⚙️ Key Features:
 ```
 ✅ Metadata Ingestion - Connects to data sources like Snowflake, BigQuery, Redshift, Kafka, Airflow, dbt, Looker, Tableau, etc.
@@ -15,15 +23,6 @@ DataHub is an open source data catalog that enables end-to-end data discovery, d
 ✅ Access via API & UI - Provides a modern React-based web UI and GraphQL API for programmatic access.
 ✅ Policy & Governance - Supports metadata policies, tags, and role-based access.
 ```
-
-
-#### 🧱 Architecture Components :
-   - **Metadata Service (GMS)**: Central GraphQL-based metadata store (backed by MySQL/Elasticsearch).
-   - **Ingestion Framework**: Python-based system that pulls metadata from sources.
-   - **Frontend**: React UI for search, lineage visualization, and dataset exploration.
-   - **Kafka**: Uses Kafka topics for event-based metadata updates.
-   - **Graph Model**: Metadata is modeled as a graph (datasets, pipelines, owners are all nodes/edges).
-
      
 
 🚀 Deployment Options
