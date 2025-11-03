@@ -1,4 +1,5 @@
 
+
 resource "helm_release" "postgresql_ha" {
   name       = "postgresql-ha"
   namespace  = "default"
