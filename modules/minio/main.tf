@@ -1,3 +1,4 @@
+
 resource "helm_release" "minio" {
   name             = "minio"
   namespace        = "default"
@@ -19,7 +20,7 @@ resource "helm_release" "minio" {
       buckets = [
         { name = "velero" },
         { name = "airbyte" },
-        { name = "anythingllm" },
+        { name = "datahub" },
         { name = "loki" }
       ]
 
