@@ -3,9 +3,8 @@
 
 
 
-## Local | DataHub
+## Kubernetes | DataHub
 DataHub is an open source data catalog that enables end-to-end data discovery, data observability, and data governance. This extensive metadata platform allows users to collect, store, and explore metadata from various sources, such as databases, data lakes, streaming platforms, and ML feature stores. DataHub provides many features, a rich UI for searching and browsing metadata, as well as an API for integrating with other applications.
-
 
 
 ⚙️ Key Features:
