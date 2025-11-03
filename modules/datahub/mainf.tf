@@ -40,6 +40,10 @@ resource "helm_release" "datahub" {
   namespace        = kubernetes_namespace.datahub.metadata[0].name
   version          = "0.5.34" # check latest version
   create_namespace = false
+
+  atomic          = false
+  cleanup_on_fail = true
+  timeout         = 900
   depends_on = [helm_release.datahub_prerequisites]
 
   values = [<<EOF
