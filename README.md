@@ -1,9 +1,10 @@
-<img width="1200" height="627" alt="image" src="https://github.com/user-attachments/assets/cbc03c6d-535f-4d9d-8916-0aeb197cf3be" />
+![509027189-1d62fa4a-49a4-46c4-96cc-c87b4a99613b](https://github.com/user-attachments/assets/cf8e2e73-3e58-49e7-87dc-f872465f0351)
 
 
 
-## Local Environment | Development 
-KIND is primarily designed for local environments — it runs an entire Kubernetes cluster inside Docker containers, meaning each node (control plane or worker) is just a container. Its provides a flexible way to create multi-node Kubernetes clusters for development and testing purposes, especially useful for scenarios where you need to simulate a more complex, distributed environment.
+
+## Local | DataHub
+DataHub is an open source data catalog that enables end-to-end data discovery, data observability, and data governance. This extensive metadata platform allows users to collect, store, and explore metadata from various sources, such as databases, data lakes, streaming platforms, and ML feature stores. DataHub provides many features, a rich UI for searching and browsing metadata, as well as an API for integrating with other applications.
 
 
 🚀 It’s especially helpful for:
