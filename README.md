@@ -1,8 +1,6 @@
 ![509027189-1d62fa4a-49a4-46c4-96cc-c87b4a99613b](https://github.com/user-attachments/assets/cf8e2e73-3e58-49e7-87dc-f872465f0351)
 
 
-
-
 ## Kubernetes | DataHub Platform
 DataHub is an open source data catalog that enables end-to-end data discovery, data observability, and data governance. This extensive metadata platform allows users to collect, store, and explore metadata from various sources, such as databases, data lakes, streaming platforms, and ML feature stores. DataHub provides many features, a rich UI for searching and browsing metadata, as well as an API for integrating with other applications.
 
